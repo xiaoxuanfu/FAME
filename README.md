@@ -1,6 +1,6 @@
 # fame
 
-A new Flutter project.
+A citibank Hackathon project
 
 ## Getting Started
 
