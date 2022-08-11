@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "395779367341",
+    "project_id": "fame-b66d5",
+    "storage_bucket": "fame-b66d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395779367341:android:ebb23e6c28e02166d20124",
+        "android_client_info": {
+          "package_name": "com.example.fame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395779367341-d53h4ou03o1m4agkf1p1hrufls2i7o45.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsJPES74qQ-k_ww81hB49yj-ImBUrnIUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395779367341-d53h4ou03o1m4agkf1p1hrufls2i7o45.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
