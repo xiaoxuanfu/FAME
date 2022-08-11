@@ -24,11 +24,11 @@ class MainMenuState extends State<MainMenu> {
   final _userController = TextEditingController();
   final _InvestController = TextEditingController();
 
-  String dropdownvalue = 'cars';
+  String dropdownvalue = 'food';
   var items = [
-    'cars',
+    'food',
     'tech',
-    'sports',
+    'transport',
     'fashion',
   ];
   double _currentSliderValue = 1.0;
