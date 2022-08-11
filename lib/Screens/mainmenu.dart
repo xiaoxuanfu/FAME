@@ -10,6 +10,7 @@ import "package:firebase_auth/firebase_auth.dart";
 import "package:cloud_firestore/cloud_firestore.dart";
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:survey_kit/survey_kit.dart';
+import '../company.dart';
 
 final _firestore = FirebaseFirestore.instance;
 
@@ -23,11 +24,11 @@ class MainMenuState extends State<MainMenu> {
   final _userController = TextEditingController();
   final _InvestController = TextEditingController();
 
-  String dropdownvalue = 'cars';
+  String dropdownvalue = 'food';
   var items = [
-    'cars',
+    'food',
     'tech',
-    'sports',
+    'transport',
     'fashion',
   ];
   double _currentSliderValue = 1.0;
@@ -178,8 +179,18 @@ class MainMenuState extends State<MainMenu> {
                     'risk appetite': _currentSliderValue,
                   });
                   // TODO edit this when for you page is created
-                  Navigator.pushNamed(context, "/");
+                  Navigator.pushNamed(context, "/dash");
                 }
+
+               // List<Company> filteredCo = [];
+                for (Company co in companies) {
+                  if (co.volatility < 1 && co.stockprice < int.parse(_InvestController.text) &&
+                      co.getCat() == dropdownvalue) {
+                    filteredCo.add(co);
+
+                  }
+                }
+                print(filteredCo);
               },
               child: Container(
                 padding: EdgeInsets.all(0.0),

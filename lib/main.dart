@@ -1,5 +1,6 @@
 import 'package:fame/Screens/welcome_screen.dart';
 import 'package:fame/constants.dart';
+import 'package:fame/dash.dart';
 import 'package:flutter/material.dart';
 import "package:firebase_core/firebase_core.dart";
 import 'package:fame/Screens/register.dart';
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => WelcomeScreen(),
         '/register': (context) => Register(),
         '/mainmenu': (context) => MainMenu(),
-       // '/dash':(context) => Dashboard(),
+        '/dash': (context) => Dashboard(),
+
       },
       theme: ThemeData(
         primaryColor: kPrimaryColor,

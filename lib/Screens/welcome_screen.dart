@@ -117,7 +117,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>{
                           final user = await _auth.signInWithEmailAndPassword(
                               email: _login_details, password: _password);
                           if (user != null) {
-                            Navigator.pushNamed(context, "/mainmenu");
+                            Navigator.pushNamed(context, "/dash");
                           }
                         } catch (e) {
                           print('error');
