@@ -7,3 +7,5 @@ Please run using
 ```
 flutter run --no-sound-null-safety
 ```
+
+Application is currently under development.
