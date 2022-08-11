@@ -30,7 +30,7 @@ class MainMenuState extends State<MainMenu> {
     'sports',
     'fashion',
   ];
-  double _currentSliderValue = 50.0;
+  double _currentSliderValue = 1.0;
 
   @override
   final _auth = FirebaseAuth.instance;
@@ -148,7 +148,7 @@ class MainMenuState extends State<MainMenu> {
           CupertinoSlider(
             //key: const Key('slider'),
             value: _currentSliderValue,
-            max: 100.0,
+            max: 2.0,
             min: 0.0,
             divisions: null,
             activeColor: Colors.purple,
