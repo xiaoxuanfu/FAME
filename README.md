@@ -1,6 +1,6 @@
 # FAME: Financial Advice Made Easy
 
-A citibank Hackathon project built using Flutter and Firebase.
+A project built using Flutter and Firebase.
 
 Please run using 
 
